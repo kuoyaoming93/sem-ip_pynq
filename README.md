@@ -1,5 +1,5 @@
 # SEM-IP-PYNQ
-This repo contains a basic test for SEM IP for PYNQ. 
+This repo contains a basic test for SEM (Soft Error Mitigation) IP for PYNQ. 
 
 ## Structure
 
