@@ -2,7 +2,7 @@
 This repo contains a basic test for SEM (Soft Error Mitigation) IP for PYNQ. 
 
 ## Structure
-
+	SEM IP.ipynb: jupyter notebook
 	bits : Bitstream folder
 	img : Image folder
 	prj : Vivado project tcl
