@@ -1,0 +1,203 @@
+2019.2:
+ * Version 4.1 (Rev. 12)
+ * No changes
+
+2019.1.3:
+ * Version 4.1 (Rev. 12)
+ * No changes
+
+2019.1.2:
+ * Version 4.1 (Rev. 12)
+ * No changes
+
+2019.1.1:
+ * Version 4.1 (Rev. 12)
+ * No changes
+
+2019.1:
+ * Version 4.1 (Rev. 12)
+ * General: Add support for new 7-series FPGA.
+ * General: Update IP packaging to exclude new UltraScale and ACAP devices - no impact to IP functionality.
+
+2018.3.1:
+ * Version 4.1 (Rev. 11)
+ * No changes
+
+2018.3:
+ * Version 4.1 (Rev. 11)
+ * No changes
+
+2018.2:
+ * Version 4.1 (Rev. 11)
+ * No changes
+
+2018.1:
+ * Version 4.1 (Rev. 11)
+ * General: Add support for new devices XA7S6, XA7S15, XA7S25, XA7S75, XA7S100
+ * General: Supported devices' production status are now determined automatically.
+
+2017.4:
+ * Version 4.1 (Rev. 10)
+ * No changes
+
+2017.3:
+ * Version 4.1 (Rev. 10)
+ * Resolve CRITICAL WARNING:[Timing 38-282] Negative SETUP slack violation (7s75-fgga676).  Also cleaned up the recommended pblocks for SEM controller for some 7-series devices.
+
+2017.2:
+ * Version 4.1 (Rev. 9)
+ * Update SEM support label to Production for xc7z007s, xc7z012s, and xc7z014s. The IP is production for these devices as of 2017.1
+
+2017.1:
+ * Version 4.1 (Rev. 8)
+ * General: Add Pre-production support for new devices XC7S6, XC7S15, XC7S75, XC7S100 (not verified in hardware)
+
+2016.4:
+ * Version 4.1 (Rev. 7)
+ * No changes
+
+2016.3:
+ * Version 4.1 (Rev. 7)
+ * General: Add Beta support for new devices XC7A25T,XC7A12T,XC7S25,XC7S50,XC7Z007S,XC7Z012S,XC7Z014S
+
+2016.2:
+ * Version 4.1 (Rev. 6)
+ * Removed the workaround in 2016.1_AR67055 as the Vivado IP generation issue is fixed
+
+2016.1_AR67055:
+ * Version 4.1 (Rev. 67055)
+ * AR 67055 - Work around IP generation issue in Vivado 2016.1
+
+2016.1:
+ * Version 4.1 (Rev. 5)
+ * No changes
+
+2015.4.2:
+ * Version 4.1 (Rev. 5)
+ * No changes
+
+2015.4.1:
+ * Version 4.1 (Rev. 5)
+ * No changes
+
+2015.4:
+ * Version 4.1 (Rev. 5)
+ * No changes
+
+2015.3:
+ * Version 4.1 (Rev. 5)
+ * IP revision number added to HDL module, library, and include file names, to support designs with both locked and upgraded IP instances
+
+2015.2.1:
+ * Version 4.1 (Rev. 4)
+ * No changes
+
+2015.2:
+ * Version 4.1 (Rev. 4)
+ * No changes
+
+2015.1:
+ * Version 4.1 (Rev. 4)
+ * Reduce SEM controller pblock dimensions for xc7a15 and xc7a50 to align to clock regions to improve logic packing and remove placer alignment warning.
+ * Remove empty example design text file, x7_sem_mon_fw_v.txt, from being generated in the example project. This file is unnecessary and has no functional impact.
+
+2014.4.1:
+ * Version 4.1 (Rev. 3)
+ * No changes
+
+2014.4:
+ * Version 4.1 (Rev. 3)
+ * Added support for xc7a15t, xa7a15t, and xc7z035 devices.
+ * Added support for -LI speed grades to all Artix and Zynq 7Z010, 7Z015, 7Z020 Devices
+ * Added support for -2LI speed grades to Kintex 7K160T, 7K325T, 7K355T, 7K410T, 7K420T, 7K480T and Zynq 7Z030 to 7Z100 Devices
+ * Encrypted source files are concatenated together to reduce the number of files and to reduce simulator compile time
+
+2014.3:
+ * Version 4.1 (Rev. 2)
+ * Added support for xq7a50t devices.
+ * Replaced the icap_clk BUFG with BUFGCE in the example design as an example of a system-level means to delay IP start up until the clock has locked or to disable the IP in debug without modifying the bitstream.
+
+2014.2:
+ * Version 4.1 (Rev. 1)
+ * Resolved AR 60056. Makedata.tcl is no longer incorrectly displayed as a simulation source file.
+ * Resolved AR 60058. Corrected the listed support of xc7a75t, xc7z030, and xc7z015 from Pre-Production to Production.
+ * This version of the IP does not yet support new device xq7a50t.
+
+2014.1:
+ * Version 4.1
+ * Added support for xc7a35t, xc7a50t, xa7a35t, xa7a50t, and xa7a75t devices at Pre-Production status.
+ * Replaced injection shim option "ChipScope" with "Vivado Lab Tools".
+ * Improved efficiency of behavioral simulation.
+ * Added simulation test harness to demonstrate inclusion of the IP in a project using Vivado simulation flows. IP behaviors are not observable in simulation. Hardware-based evaluation is required.
+
+2013.4:
+ * Version 4.0 (Rev. 3)
+ * This version of the IP does not yet support new Artix devices 7A35T and 7A50T.
+
+2013.3:
+ * Version 4.0 (Rev. 2)
+ * Increased pblock dimensions in the example design constraint file for Virtex-7 devices to fully contain logic. These pblocks may be manually reduced when integrating the IP into a larger design. Improved packing may reduce the design FIT. (AR47338)
+ * Moved pblock closer to the ICAP in the example design constraint file for 7z100 devices to improve timing.
+ * Added support for Cadence IES and Synopsys VCS simulators.
+ * Added support for xc7a75t, xc7a75tl, and xc7z015 devices.
+ * Support for xc7a75t, xc7a75tl, xc7z015, and xc7vh870t devices at Pre-Production status. All other supported devices at Production status.
+
+2013.2:
+ * Version 4.0 (Rev. 1)
+ * Updated synchronizers to improve Mean Time Between Failures (MTBF) for metastability.
+ * Reduced pblock dimensions in the example design constraint file for SSI devices to increase logic packing and correct alignment of block memory placement.
+ * Increased pblock dimensions in the example design constraint file for non-SSI devices to fully contain logic for correction by enhanced repair. These pblocks may be manually reduced when integrating the IP into a larger design. Improved packing may reduce the design FIT. (AR47338)
+ * Resolved AR55370. Modified example design files for SSI devices to eliminate MON shim status report character loss and associated initialization state halt condition.
+ * Reduced warnings in synthesis
+
+2013.1:
+ * Version 4.0
+ * Added support for Zynq-7000 SoCs.
+ * Resolved AR47402. Enabled maximum clock frequency of up to 100 MHz in 7 Series devices.
+ * Resolved AR53438. Parameterized the EXT shim module to support larger SPI Flash devices. Refer to PG036 for more information.
+
+(c) Copyright 2010 - 2019 Xilinx, Inc. All rights reserved.
+
+This file contains confidential and proprietary information
+of Xilinx, Inc. and is protected under U.S. and
+international copyright and other intellectual property
+laws.
+
+DISCLAIMER
+This disclaimer is not a license and does not grant any
+rights to the materials distributed herewith. Except as
+otherwise provided in a valid license issued to you by
+Xilinx, and to the maximum extent permitted by applicable
+law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+(2) Xilinx shall not be liable (whether in contract or tort,
+including negligence, or under any other theory of
+liability) for any loss or damage of any kind or nature
+related to, arising under or in connection with these
+materials, including for any direct, or any indirect,
+special, incidental, or consequential loss or damage
+(including loss of data, profits, goodwill, or any type of
+loss or damage suffered as a result of any action brought
+by a third party) even if such damage or loss was
+reasonably foreseeable or Xilinx had been advised of the
+possibility of the same.
+
+CRITICAL APPLICATIONS
+Xilinx products are not designed or intended to be fail-
+safe, or for use in any application requiring fail-safe
+performance, such as life-support or safety devices or
+systems, Class III medical devices, nuclear facilities,
+applications related to the deployment of airbags, or any
+other applications that could lead to death, personal
+injury, or severe property or environmental damage
+(individually and collectively, "Critical
+Applications"). Customer assumes the sole risk and
+liability of any use of Xilinx products in Critical
+Applications, subject only to applicable laws and
+regulations governing limitations on product liability.
+
+THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+PART OF THIS FILE AT ALL TIMES.
